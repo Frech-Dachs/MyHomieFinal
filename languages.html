@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My own Portfolio" />
+    <meta name="autor" content="Leon Troller" />
+    <meta name="keywords" content="Webseite, Portfolio, Schule" />
+    <title>Languages</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>MyHomie</h1>
+        <!-- Hamburger Button -->
+        <button class="burger" id="burger">&#9776;</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Startseite</a>
+          <a href="about.html">About</a>
+          <a href="module.html">Module</a>
+          <a href="languages.html" class="aktuelle-seite">Languages</a>
+          <a href="formular.html">Sign in</a>
+          <a href="verteiler.html">Verteiler</a>
+          <a
+            href="https://www.apple.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >My own shop</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Languages</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>C#</em></td>
+              <td>
+                C# ist eine typsichere, objektorientierte Programmiersprache,
+                die von Microsoft entwickelt wurde und auf der .NET Framework
+                (oder .NET) basiert.
+              </td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <td><em>Python</em></td>
+              <td>
+                Python ist eine Programmiersprache, die in Webanwendungen, der
+                Softwareentwicklung, der Datenwissenschaft und im maschinellen
+                Lernen (ML) weit verbreitet ist
+              </td>
+              <td>7.5/10</td>
+            </tr>
+            <tr>
+              <td><em>HTML/CSS</em></td>
+              <td>Web-Entwicklung</td>
+              <td>10/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <aside>this is my project</aside>
+    <footer>© Leon Troller 2025 MyHomie</footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

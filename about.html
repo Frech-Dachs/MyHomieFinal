@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My own Portfolio" />
+    <meta name="keywords" content="Webseite, Portfolio, Schule" />
+    <meta name="autor" content="Leon Troller" />
+    <title>MyHomie</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>MyHomie</h1>
+        <!-- Hamburger Button -->
+        <button class="burger" id="burger">&#9776;</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Startseite</a>
+          <a href="about.html" class="aktuelle-seite">About</a>
+          <a href="module.html">Module</a>
+          <a href="languages.html">Languages</a>
+          <a href="formular.html">Sign in</a>
+          <a href="verteiler.html">Verteiler</a>
+          <a
+            href="https://www.apple.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >My own shop</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>About Me</h2>
+        <p>Dev: Leon Troller</p>
+      </article>
+      <section>
+        <h2>Sponsoren</h2>
+        <ul>
+          <li><strong>Apple</strong></li>
+          <li>Google</li>
+          <li>Amazon</li>
+        </ul>
+        <p>Honorable Mentions: Meta, Nike, McDonalds, Nvidia</p>
+      </section>
+    </main>
+    <aside>this is my project</aside>
+    <footer>© Leon Troller 2025 MyHomie</footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

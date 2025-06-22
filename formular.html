@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My own Portfolio">
+    <meta name="author" content="Leon Troller">
+    <meta name="keywords" content="Webseite, Portfolio, Schule">
+    <title>Leons Formular</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+      <fieldset>
+        <legend>Persönliche Informationen</legend>
+
+        <!-- text -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          maxlength="30"
+          placeholder="Max Mustermann"
+          autofocus
+        ><br>
+
+        <!-- email -->
+        <label for="email">E-Mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="max@example.com"
+        /><br />
+
+        <!-- telefon -->
+        <label for="telefon">Telefonnummer:</label>
+        <input
+          type="tel"
+          id="telefon"
+          name="telefon"
+          pattern="[0-9+\s-]+"
+          placeholder="079 123 45 67"
+        /><br />
+
+        <!-- date -->
+        <label for="geburtstag">Geburtsdatum:</label>
+        <input type="date" id="geburtstag" name="geburtstag" required /><br />
+
+        <!-- url -->
+        <label for="webseite">Portfolio-URL:</label>
+        <input
+          type="url"
+          id="webseite"
+          name="webseite"
+          placeholder="https://meinportfolio.ch"
+        /><br />
+
+        <!-- passwort -->
+        <label for="passwort">Passwort:</label>
+        <input
+          type="password"
+          id="passwort"
+          name="passwort"
+          required
+          minlength="8"
+        /><br />
+
+        <!-- color picker -->
+        <label for="lieblings_farbe">Lieblings Farbe</label>
+        <input type="color" name="lieblings_farbe" id="lieblings_farbe" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Schnupperlehre</legend>
+
+        <!-- Zahl -->
+        <label for="dauer">Schnupperlehrdauer (Tage):</label>
+        <input
+          type="number"
+          id="dauer"
+          name="dauer"
+          min="1"
+          max="12"
+          value="3"
+        /><br />
+
+        <label for="start">Gewünschter Start:</label>
+        <input type="date" id="start" name="start" /><br />
+
+        <!-- dropdown -->
+        <label for="bereich">Bereich:</label>
+        <select name="bereich" id="bereich" required>
+          <option value="">-- Bitte wählen --</option>
+          <option value="it">Informatik</option>
+          <option value="marketing">Marketing</option>
+          <option value="design">Design</option></select
+        ><br />
+
+        <!-- Einfachauswahl -->
+        <label>Verfügbarkeit:</label><br />
+        <input
+          type="radio"
+          id="vollzeit"
+          name="verfuegbar"
+          value="vollzeit"
+          required
+        />
+        <label for="vollzeit">Vollzeit</label>
+        <input type="radio" id="teilzeit" name="verfuegbar" value="teilzeit" />
+        <label for="teilzeit">Teilzeit</label><br />
+
+        <!-- Mehrfachauswahl -->
+        <label>Kenntnisse:</label><br />
+        <input type="checkbox" id="html" name="kenntnisse[]" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="kenntnisse[]" value="CSS" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="kenntnisse[]" value="JavaScript" />
+        <label for="js">JavaScript</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Motivation</legend>
+
+        <!-- langer text -->
+        <label for="motivation">Warum möchten Sie dieses Praktikum?</label
+        ><br />
+        <textarea
+          id="motivation"
+          name="motivation"
+          required
+          minlength="20"
+          maxlength="1000"
+          rows="5"
+          cols="40"
+          placeholder="Ich interessiere mich besonders für..."
+        ></textarea
+        ><br />
+
+        <label for="anmerkung">Zusätzliche Bemerkung:</label>
+        <input
+          type="text"
+          id="anmerkung"
+          name="anmerkung"
+          readonly
+          value="Bitte alle Felder korrekt ausfüllen."
+          size="40"
+          disabled
+        /><br />
+
+        <!-- range -->
+        <label for="motivation_range">Motivation</label>
+        <input
+          type="range"
+          id="motivation_range"
+          name="motivation_range"
+          value="100"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Kritik</legend>
+        <label for="Kritik">Kritik für die Webseite</label>
+        <input
+          type="text"
+          name="Kritik"
+          id="Kritik"
+          value="ICH FINDE DIESE WEBSEITE PERFEKT!"
+          readonly
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Einverständnis</legend>
+
+        <input type="checkbox" id="datenschutz" name="datenschutz" required />
+        <label for="datenschutz"
+          >Ich akzeptiere die Datenschutzbestimmungen.</label
+        ><br />
+      </fieldset>
+
+      <button type="submit">Absenden</button>
+      <button type="reset">Zurücksetzen</button>
+      <button onclick="window.location.href='../index.html';">Abbrechen</button>
+    </form>
+  </body>
+</html>

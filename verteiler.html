@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mein eigenes Portfolio">
+    <meta name="author" content="Leon Troller">
+    <meta name="keywords" content="Webseite, Portfolio, Schule">
+    <title>Kompetenzübersicht</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>MyHomie</h1>
+
+        <!-- Hamburger Button -->
+        <button class="burger" id="burger">&#9776;</button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Startseite</a>
+          <a href="about.html">About</a>
+          <a href="module.html">Module</a>
+          <a href="languages.html">Languages</a>
+          <a href="formular.html">Sign in</a>
+          <a href="verteiler.html">Verteiler</a>
+          <a href="https://www.apple.com" target="_blank">My own shop</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- karten -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">E3</h2>
+            <p class="card-text">Eigene HTML webseite</p>
+            <a href="../index.html" class="btn btn-primary">Ansehen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">E4</h2>
+            <p class="card-text">Formular</p>
+            <a href="../E4/formular.html" class="btn btn-primary">Ansehen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">E5</h2>
+            <p class="card-text">Verschiedene Medien</p>
+            <a href="../index.html" class="btn btn-primary">Ansehen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">E7</h2>
+            <p class="card-text">Responsives Design</p>
+            <a href="verteiler.html" class="btn btn-primary">Ansehen</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="card">
+        <div class="card-body">This is my Project</div>
+      </div>
+    </aside>
+    <footer>© Leon Troller 2025 MyHomie</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

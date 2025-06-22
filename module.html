@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My own Portfolio" />
+    <meta name="autor" content="Leon Troller" />
+    <meta name="keywords" content="Webseite, Portfolio, Schule" />
+    <title>MyHomie</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>MyHomie</h1>
+        <!-- Hamburger Button -->
+        <button class="burger" id="burger">&#9776;</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Startseite</a>
+          <a href="about.html">About</a>
+          <a href="module.html" class="aktuelle-seite">Module</a>
+          <a href="languages.html">Languages</a>
+          <a href="formular.html">Sign in</a>
+          <a href="verteiler.html">Verteiler</a>
+
+          <a
+            href="https://www.apple.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >My own shop</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Module</h2>
+      <article>
+        <h3>Overall:</h3>
+        <ol>
+          <li>Modul 293 by Herr Brodbeck</li>
+          <li>293 von D. Brodbeck</li>
+          <li>M293: Daniel Brodbeck</li>
+        </ol>
+        <!-- <img -->
+        <!-- src="pics/absolute-cinema-martin-scorsese.png" -->
+        <!-- alt="absolute cinema" -->
+        <!-- /> -->
+      </article>
+      <article>
+        <h3>Bester Lehrer/Lernmethoden</h3>
+        <ol>
+          <li>
+            <strong>Herr <em>Brodbeck</em></strong>
+          </li>
+          <li>D. Brodbeck</li>
+          <li>Daniel Brodbeck</li>
+        </ol>
+        <!-- <img src="pics/image.jpg" alt="Bild von Herr Brodbeck" /> -->
+      </article>
+      <article>
+        <h3>Beste LBs</h3>
+        <ol>
+          <li>Modul 293 by Herr Brodbeck</li>
+          <li>293 von D. Brodbeck</li>
+          <li>M293: Daniel Brodbeck</li>
+        </ol>
+      </article>
+    </main>
+    <aside>this is my project</aside>
+    <footer>© Leon Troller 2025 MyHomie</footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

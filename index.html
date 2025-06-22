@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mein eigenes Portfolio">
+    <meta name="author" content="Leon Troller">
+    <meta name="keywords" content="Webseite, Portfolio, Schule">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyHomie</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>MyHomie</h1>
+        <!-- Hamburger Button -->
+        <button class="burger" id="burger">&#9776;</button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" class="aktuelle-seite">Startseite</a>
+          <a href="about.html">About</a>
+          <a href="module.html">Module</a>
+          <a href="languages.html">Languages</a>
+          <a href="formular.html">Sign in</a>
+          <a href="verteiler.html">Verteiler</a>
+          <a
+            href="https://www.apple.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >My own shop</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>Welcome To My Homie</h2>
+        <p>
+          <u><s>This</s> is my <del>Website</del></u>
+        </p>
+
+        <label><strong>Me: </strong></label><br>
+        <img src="Assets/image.jpg" alt="Mein Portrait" width="400"><br >
+
+        <label><strong>Transparent Me:</strong></label
+        ><br>
+        <img
+          src="Assets/Lebron-James-Lakers-Transparent-Background.png"
+          alt="transparent img"
+        ><br>
+
+        <label><strong>Me in the internet:</strong></label
+        ><br>
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/63c71f99d761def4e850c454/Los-Angeles-Lakers-v-Atlanta-Hawks/960x0.jpg?height=512&width=711&fit=bounds"
+          alt="Externes Beispielbild"
+        >
+
+        <h3>Orangutan ASMR</h3>
+        <audio controls>
+          <source src="Assets/orangutanasmrOrangUtanASMR.ogg" type="audio/ogg" >
+          <source src="Assets/orangutanasmrOrangUtanASMR.mp3" type="audio/mpeg" >
+          Dein Browser unterstützt kein Audio.
+        </audio>
+
+        <h3>How to put a potato on your head</h3>
+        <video controls width="480">
+          <source src="Assets/4KThatONELeBronJamesEdit.mp4" type="video/mp4">
+          Dein Browser unterstützt kein Video.
+        </video>
+
+        <h3>How to take a potato off your head</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/B02Y_yEGlNI"
+          title="YouTube video player"
+          allowfullscreen
+        ></iframe>
+
+        <h3>kannst du mich finden?</h3>
+        <iframe
+          src="https://www.google.com/maps/embed"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+
+        <p>
+          Kontakt: <a href="mailto:leon.troller@bbzbl-it.ch">E-Mail senden</a> |
+          <a href="tel:+4199999">+41 999 99 99</a>
+        </p>
+      </article>
+    </main>
+
+    <aside>this is my project</aside>
+
+    <footer>© Leon Troller 2025 MyHomie</footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
