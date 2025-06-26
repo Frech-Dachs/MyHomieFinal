@@ -92,10 +92,10 @@ nav h1 {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
-
 
 /* Burger Menü (standardmäßig versteckt) */
 .nav-links {
@@ -162,31 +162,31 @@ table {
   border-collapse: collapse;
   margin-top: 10px;
   background-color: rgb(var(--primary-color-rgb) / 0.3);
-}
 
-th,
-td {
-  padding: 0.5rem 1rem;
-  text-align: left;
-}
+  th,
+  td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
 
-tr:nth-of-type(even) {
-  background-color: rgb(var(--secondary-color-rgb) / 0.3);
-  backdrop-filter: blur(5px);
-}
+  tr:nth-of-type(even) {
+    background-color: rgb(var(--secondary-color-rgb) / 0.3);
+    backdrop-filter: blur(5px);
+  }
 
-tr:hover:nth-of-type(even) {
-  background-color: rgb(var(--secondary-color-rgb) / 0.7);
-}
+  tr:hover:nth-of-type(even) {
+    background-color: rgb(var(--secondary-color-rgb) / 0.7);
+  }
 
-tr:hover:nth-of-type(odd) {
-  background-color: rgb(var(--primary-color-rgb) / 0.7);
-}
+  tr:hover:nth-of-type(odd) {
+    background-color: rgb(var(--primary-color-rgb) / 0.7);
+  }
 
-th {
-  background-color: rgb(var(--primary-color-rgb) / 0.7);
-  backdrop-filter: blur(5px);
-  color: white;
+  th {
+    background-color: rgb(var(--primary-color-rgb) / 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+  }
 }
 
 /* ============================= */
@@ -269,7 +269,7 @@ img {
     grid-template-areas:
       "header header header"
       "main main aside"
-      "footer footer footer"; 
+      "footer footer footer";
   }
 
   nav {
